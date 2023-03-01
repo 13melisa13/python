@@ -1,0 +1,14 @@
+def main(v):
+    v1 = (int((bin(int(v[0], 16))), 2)  ).__str__()
+    v2 = (int((bin(int(v[1], 16))), 2)  ).__str__()
+    v3 = (int((bin(int(v[2], 16))), 2)).__str__()
+    v4 = (int((bin(int(v[3], 16))), 2) << 1  ).__str__()
+    v5 = (int((bin(int(v[4], 16))), 2) >> 1).__str__()   # right
+    print(v5 + " " + v4 + " " + v3 + " " + v2 + " " + v1)
+
+
+if __name__ == "__main__":
+    (main(('0x11', '0x1', '0x1c8', '0x1b', '0x3')))
+    main(('0x29', '0x1', '0x14b', '0x1e', '0x7'))
+    main(('0xc', '0x0', '0xb2', '0xe', '0x3'))
+    main(('0x15', '0x0', '0x1c5', '0x13', '0x5'))
